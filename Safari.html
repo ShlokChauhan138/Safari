@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Safaris</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+            .safari-slide{
+                height: 50vh;
+                width: 100%;
+                text-align: center;
+                position: relative;
+                padding-top: 20vh;
+            }
+            .forest{ background-color: green; color: white; }
+            .ocean{ background-color: rgb(53, 192, 238); }
+            .desert{ background-color: rgb(228, 206, 3); }
+            img{
+                height: 200px;
+                width: auto;
+            }
+            section{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#navBar" data-offset="60">
+
+        <div id="mCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mCarousel" data-slide-to="1"></li>
+                <li data-target="#mCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner display-3">
+                <div class="carousel-item safari-slide forest active">&#x1F99C; Forest Safari</div>
+                <div class="carousel-item safari-slide ocean">&#x1F30A; Ocean Safari</div>
+                <div class="carousel-item safari-slide desert">&#x1F3DC; Desert Safari</div>
+            </div>
+
+            <a href="#mCarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#mCarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <nav id="navBar" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <span class="navbar-brand">&#x1F981; Safari Guide</span>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#forest" class="nav-link">Forest</a></li>
+                <li class="nav-item"><a href="#ocean" class="nav-link">Ocean</a></li>
+                <li class="nav-item"><a href="#desert" class="nav-link">Desert</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <section class="bg-success" id="forest">
+                <p class="display-4">Forest Safari <img src="Images/forest.jpeg" alt="Unable to load Forest Image!"></p>
+            </section>
+
+            <section class="bg-info" id="ocean">
+                <p class="display-4">Ocean Safari <img src="Images/ocean.jpeg" alt="Unable to load Ocean Image!"></p>
+            </section>
+
+            <section class="bg-warning" id="desert">
+                <p class="display-4">Desert Safari <img src="Images/desert.jpeg" alt="Unable to load Desert Image!"></p>
+            </section>
+
+        </div>
+
+        <!--bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
